@@ -1,5 +1,3 @@
-import pandas as pd
-import numpy as np
 import math
 
 
@@ -28,19 +26,19 @@ for i in range(num_train):
         data[len(data)-1].append(float(input("\n Enter the value of next feature\n")))
     classes.append(input("\nEnter Class for this pair\n"))
 
-print(data)
-print(classes)
+# print(data)
+# print(classes)
 
 test_point = []
 
 for i in range(num_features):
     test_point.append(
         float(input("\nEnter the value of feature for test pair\n")))
-print(test_point)
+# print(test_point)
 
 
 k = int(input("\nPlease Enter the k value\n"))
-print(k)
+# print(k)
 
 
 """ Find Euclidian distance for all and sort """
@@ -49,7 +47,7 @@ for i in range(num_train):
     dist[(ed(data[i], test_point))] = i
 
 dist = sorted(dist.items())
-print(dist)
+# print(dist)
 
 # Keep k and discard the rest
 dist = dist[:k]
@@ -66,7 +64,7 @@ while not foundMajority:
     for i in range(len(dist)):
         classCounts[classes[dist[i][1]]] += 1
 
-    print(classCounts)
+    # print(classCounts)
     maxClassCount = 0
 
     for key, value in classCounts.items():
