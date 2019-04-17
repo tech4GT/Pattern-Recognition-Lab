@@ -1,6 +1,6 @@
-1,2,3,4,5,review
-it,was,a,bad,movie,-
-,very,bad,,,-
-nice,work,,,,+
-it,was,a,good,movie,+
-fine,,,,,+
+I, loved, the, movie, hated, a, great, poor, acting, good, class
+1,1,1,1,0,0,0,0,0,0,+
+1,0,1,1,1,0,0,0,0,0,-
+0,0,0,2,0,1,1,0,0,1,+
+0,0,0,0,0,0,0,1,1,0,-
+0,0,0,1,0,1,1,0,1,1,+
